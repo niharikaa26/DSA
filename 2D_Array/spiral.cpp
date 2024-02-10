@@ -14,19 +14,21 @@ int main()
         cin >> a[i][j];
       }
     }
+
+    //logic
     for(int k=0; k<(n/2); k++){
       for(int i=0; i<m; i++){
-      if(i==0){
-         for(int j=k; j<n-k; j++){
-        cout<<a[i+k][j]<<" ";
+      if(i==k){
+         for(int j=k; j<(n-k); j++){
+        cout<<a[i][j]<<" ";
       }
       }
-      else if(i>0 && i<(m-1-k)){
-        cout<<a[i+k][n-1-k]<<" ";
+      else if(i>k && i<(m-1-k)){
+        cout<<a[i][n-k-1]<<" ";
       }    
       else if(i==(m-1-k)){
-        for(int j=(n-k-(n/2)); j>(k-1); j--){
-        cout<<a[i][j]<<"...";
+        for(int j=(n-1-k); j>=k; j--){
+        cout<<a[i][j]<<" ";
       }
     } 
 
