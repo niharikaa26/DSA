@@ -1,5 +1,7 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 int main(){
-  cout<<"hello world";
+  vector<vector<int > > v(3,vector<int> (4,2));
+  
 }

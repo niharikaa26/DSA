@@ -1,2 +1,3 @@
- // for (int i = (m-1); i < m; i++)
-  //   {
+else if(j= (m-i)){
+      //   cout<<arr[0+i][j];
+      // }
